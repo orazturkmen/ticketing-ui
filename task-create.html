@@ -217,7 +217,7 @@
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="page-header" id="top">
-                                    <h2 class="pageheader-title">Project Create</h2>
+                                    <h2 class="pageheader-title">Task Create</h2>
                                 </div>
                             </div>
                         </div>
@@ -233,14 +233,13 @@
                                 <form>
                                     <div class="row">
                                         <div class="form-group col-12">
-                                            <label for="projectname" class="col-form-label">Project Name</label>
-                                            <input id="projectname" type="text" class="form-control" placeholder="project name">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-12">
-                                            <label for="projectcode" class="col-form-label">Project Code</label>
-                                            <input id="projectcode" type="text" class="form-control" placeholder="project code">
+                                            <label>Project</label>
+                                            <select name="roleId" id="project" class="custom-select" required="required">
+                                                <option value="none" selected="" disabled="">Select</option>
+                                                <option value="adnin">PRJ001</option>
+                                                <option value="adnin">PRJ002</option>
+                                                <option value="adnin">PRJ003</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -248,25 +247,22 @@
                                             <label>Assigned Manager</label>
                                             <select name="roleId" id="assign" class="custom-select" required="required">
                                                 <option value="none" selected="" disabled="">Select</option>
-                                                <option value="adnin">Oraz</option>
+                                                <option value="employee">Oraz</option>
+                                                <option value="employee">John</option>
+                                                <option value="employee">Kevin</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="form-group col-6">
-                                            <label>Project Start Date</label>
-                                            <input type="date" class="form-control">
-                                        </div>
-                                        <div class="form-group col-6">
-                                            <label>Project End Date</label>
-                                            <input type="date" class="form-control">
-
+                                        <div class="form-group col-12">
+                                            <label for="tasksubject" class="col-form-label">Task Subject</label>
+                                            <input id="tasksubject" type="text" class="form-control" placeholder="task subject">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-12">
-                                            <label>Project Detail</label>
-                                            <textarea placeholder="write your project details..." class="form-control"></textarea>
+                                            <label>Task Detail</label>
+                                            <textarea placeholder="write your task details..." class="form-control"></textarea>
                                         </div>
                                     </div>
                                     <div class="row">
